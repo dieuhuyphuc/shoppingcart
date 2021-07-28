@@ -49,3 +49,6 @@ Route::get('/admin/form', [AdminController::class, 'showForm']);
 Route::resource('admin/article-categories', 'App\Http\Controllers\ArticleCategoryController');
 Route::resource('admin/articles', 'App\Http\Controllers\ArticleController');
 Route::get('/cart/add',[\App\Http\Controllers\ShoppingcartController::class,'add']);
+Route::get('/cart/show',[\App\Http\Controllers\ShoppingcartController::class,'show']);
+Route::get('/cart/update',[\App\Http\Controllers\ShoppingcartController::class,'update']);
+Route::get('/cart/remove',[\App\Http\Controllers\ShoppingcartController::class,'remove']);
